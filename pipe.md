@@ -91,7 +91,7 @@ An explanation found in StackOverflow about the difference between ```fit()``` a
 
 >To center the data (make it have zero mean and unit standard error), you subtract the mean and then divide the result by the standard deviation.
 
-<div><img align="center" src="http://www.sciweavers.org/tex2img.php?eq=%20%5Cmapsto%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20x%E2%80%B2%3D%5Cfrac%7Bx%20-%20%5Cmu%20%7D%7B%20%5Csigma%20%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" alt="eq"/></div>
+>![eq](http://www.sciweavers.org/tex2img.php?eq=%20%5Cmapsto%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20x%E2%80%B2%3D%5Cfrac%7Bx%20-%20%5Cmu%20%7D%7B%20%5Csigma%20%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 >You do that on the training set of data. But then you have to apply the same transformation to your testing set (e.g. in cross-validation), or to newly obtained examples before forecast. But you have to use the same two parameters $μ$ and $σ$ (values) that you used for centering the training set.
 
