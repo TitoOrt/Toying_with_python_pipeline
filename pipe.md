@@ -91,7 +91,7 @@ An explanation found in StackOverflow about the difference between ```fit()``` a
 
 >To center the data (make it have zero mean and unit standard error), you subtract the mean and then divide the result by the standard deviation.
 
->$$x′=\frac{x−μ}{σ}$$
+>[img]http://www.sciweavers.org/tex2img.php?eq=x%E2%80%B2%3D%5Cfrac%7Bx%E2%88%92%CE%BC%7D%7B%CF%83%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
 
 >You do that on the training set of data. But then you have to apply the same transformation to your testing set (e.g. in cross-validation), or to newly obtained examples before forecast. But you have to use the same two parameters $μ$ and $σ$ (values) that you used for centering the training set.
 
@@ -99,7 +99,7 @@ An explanation found in StackOverflow about the difference between ```fit()``` a
 
 >Basically, ```fit_transform()``` joins these two steps and is used for the initial fitting of parameters on the training set $x$, but it also returns a transformed $x′$. Internally, it just calls first ```fit()``` and then ```transform()``` on the same data.
 
-![image.png](attachment:image.png)
+![image.png](https://github.com/TitoOrt/Toying_with_python_pipeline/blob/master/image.png)
 
 
 ```python
