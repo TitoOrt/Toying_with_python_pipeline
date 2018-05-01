@@ -90,8 +90,8 @@ ridge.score(X_test, y_test)
 An explanation found in StackOverflow about the difference between ```fit()``` and ```fit_transform()``` methods: 
 
 >To center the data (make it have zero mean and unit standard error), you subtract the mean and then divide the result by the standard deviation.
-><div style="text-align:center"><img src ="http://www.sciweavers.org/tex2img.php?eq=x%E2%80%B2%3D%5Cfrac%7Bx%20-%20%5Cmu%20%7D%7B%20%5Csigma%20%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" /></div>
->![equation](http://www.sciweavers.org/tex2img.php?eq=x%E2%80%B2%3D%5Cfrac%7Bx%20-%20%5Cmu%20%7D%7B%20%5Csigma%20%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+> <div style="text-align:center"><img src ="http://www.sciweavers.org/tex2img.php?eq=x%E2%80%B2%3D%5Cfrac%7Bx%20-%20%5Cmu%20%7D%7B%20%5Csigma%20%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" /></div>
 
 >You do that on the training set of data. But then you have to apply the same transformation to your testing set (e.g. in cross-validation), or to newly obtained examples before forecast. But you have to use the same two parameters $μ$ and $σ$ (values) that you used for centering the training set.
 
